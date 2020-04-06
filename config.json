@@ -1,0 +1,313 @@
+{
+  "version": 1.0,
+  "title": "Assignment 1: Variables and cin",
+  "quiz": [
+    {
+      "question": "Of the following, which is not a type in C++?",
+      "options": [
+        {
+          "value": "`int`",
+          "answer": false,
+          "explanation": "The `int` type is used to store **integers** or numbers with no decimal component. For example: `1` `5` `-21`"
+        },
+        {
+          "value": "`string`",
+          "answer": false,
+          "explanation": "The `string` type  is used to store words, sentences, or any sequence of letters. For example: `Look! Strings have punctuation too!` `Even numbers 1, -12, 4.522 are really just letters that can be included as a part of a string.`"
+        },
+        {
+          "value": "`decimal`",
+          "answer": true,
+          "explanation": "Correct! `decimal` is not a type in C++. If you want to use a decimal number, use `float` instead."
+        },
+        {
+          "value": "`float`",
+          "answer": false,
+          "explanation": "The `float` type is used to store real numbers or numbers that can have fractional components. For example: `.021` `1.2` `-18.3` `1`"
+        }
+      ]
+    },
+    {
+      "question": "If you were going to store a numerical value of `5.3`, what type of variable would you use?",
+      "options": [
+        {
+          "value": "`int`",
+          "answer": false,
+          "explanation": "The `int` type is used to store integer values, so it could represent `5` but not `5.3`."
+        },
+        {
+          "value": "`char`",
+          "answer": false,
+          "explanation": "The `char` type is not used to store numbers. It is used to store single letters such as `a` or `n`."
+        },
+        {
+          "value": "`float`",
+          "answer": true,
+          "explanation": "Correct! `float` is used to store non-integer numbers like `5.3`."
+        },
+        {
+          "value": "`string`",
+          "answer": false,
+          "explanation": "While you can write `string number = \"5.3\";`, the variable `number` is still a `string` type, so you could not perform mathematical operators it."
+        }
+      ]
+    },
+    {
+      "question": "If you were going to store the letter `c` what type of variable would you use?",
+      "options": [
+        {
+          "value": "`float`",
+          "answer": false,
+          "explanation": "The `float` type is used to store rational numbers such as `3.4` or `8.3` but not letters."
+        },
+        {
+          "value": "`int`",
+          "answer": false,
+          "explanation": "The `int` type is used to store integer or non-decimal numbers such as `673` or `-22` but not letters."
+        },
+        {
+          "value": "`string`",
+          "answer": false,
+          "explanation": "The `string` type could be used to store the value `c` but is not the best choice. Strings are used to store more than one character."
+        },
+        {
+          "value": "`char`",
+          "answer": true,
+          "explanation": "Correct! `char` is used to store a single letter."
+        }
+      ]
+    },
+    {
+      "question": "If you were going to store `\"abcd\"`, what type of variable would you use?",
+      "options": [
+        {
+          "value": "`string`",
+          "answer": true,
+          "explanation": "Correct! `string` is used to store more than one character."
+        },
+        {
+          "value": "`char`",
+          "answer": false,
+          "explanation": "Not quite, `char` is only used when you have a single character."
+        }
+      ]
+    },
+    {
+      "question": "If you were going to store `\"5.3\"`, what type of variable would you use?",
+      "options": [
+        {
+          "value": "`string`",
+          "answer": true,
+          "explanation": "Correct! Even though the value of the text is a number, you're still representing it as text."
+        },
+        {
+          "value": "`char`",
+          "answer": false,
+          "explanation": "Not quite, `char` is only used when you have a single character."
+        },
+        {
+          "value": "`float`",
+          "answer": false,
+          "explanation": "While the number inside of the quotes is a decimal number, the actual value is text."
+        }
+      ]
+    },
+    {
+      "question": "What is the value of `z` after this code segement is runs?\n```cpp\nint x = 3;\nint y = 6;\n\nint z = x + y;\n```",
+      "options": [
+        {
+          "value": "6",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "3",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "9",
+          "answer": true,
+          "explanation": "Correct! `z` would be `9` because it is equal to the values of `x` and `y` added together and `x = 3` and `y = 6`."
+        },
+        {
+          "value": "10",
+          "answer": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "question": "What is the value of `z` after this code segement is runs?\n```cpp\nint z = 4;\nint y = 6;\n\nz = y / z;\n```",
+      "options": [
+        {
+          "value": "4",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "1.5",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "1",
+          "answer": true,
+          "explanation": "Correct. Though, `6/4 = 1.5`, `z` and `y` are `int` types, hence you have to use integer division. Integer division only returns the quotiant (the whole number part of division). Thus, `z` is `1`."
+        },
+        {
+          "value": "1.0",
+          "answer": false,
+          "explanation": "`1.0` is a `float` type! `z` is an integer type."
+        }
+      ]
+    },
+    {
+      "question": "Which line of code will compile correctly when inserted into the following program?\n```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n  int num_of_oranges;\n  // Line inserted here.\n}\n```",
+      "options": [
+        {
+          "value": "`cin num_of_oranges;`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`cin >> int num_of_oranges;`",
+          "answer": false,
+          "explanation": "The `int` qualifier is grammatically incorrect after the `>>` symbol."
+        },
+        {
+          "value": "`cin >> num_of_oranges;`",
+          "answer": true,
+          "explanation": "Correct! To assign a variable's value using `cin`, you must first declare the variable `int variable_name;`, and then use `cin >> variable_name;` to update its value."
+        },
+        {
+          "value": "`cin >> \"num_of_oranges\";`",
+          "answer": false,
+          "explanation": "By putting quotes around `num_of_oranges` you are no longer referring to it as a variable but it now just represents the word `\"num_of_oranges\"`. Only variables can be to the right of `cin >>`."
+        },
+        {
+          "value": "`cin >> num_of_apples;`",
+          "answer": false,
+          "explanation": "No variable `num_of_apples` exists!"
+        }
+      ]
+    },
+    {
+      "question": "Which line of code will cause an error when inserted into the following program?\n```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n  // Line inserted here.\n}\n```",
+      "options": [
+        {
+          "value": "`int x = 4;`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`float x = 12.2;`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`string x = things;`",
+          "answer": true,
+          "explanation": "Correct! To declare a `string` you must use double quotes around the value. The correct line of code would be `string x = \"things\";`."
+        },
+        {
+          "value": "`float x = 2;`",
+          "answer": false,
+          "explanation": ""
+        }
+      ]
+    }
+  ],
+  "fix_code": [
+    {
+      "question": "This code isn't formatted correctly! Can you help fix it?",
+      "hints": [
+        {
+          "line_number": -1,
+          "hint": "Spaces should be used between all operators e.g. `=` `+` `-` `/` `*` `<<` `>>`"
+        }
+      ]
+    },
+    {
+      "question": "This code isn't formatted correctly! Can you help fix it?",
+      "hints": [
+        {
+          "line_number": -1,
+          "hint": "Variables should be named using `lower_snake_case`."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't compiling correctly! Can you help fix it? Be sure to also address any formatting errors.",
+      "hints": [
+        {
+          "line_number": 6,
+          "hint": "When assigning `string` variables, the value must be in `\"quotes\"`."
+        },
+        {
+          "line_number": 7,
+          "hint": "Make sure you are using the right variable at all times."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't compiling correctly! Can you help fix it? Be sure to also address any formatting errors.",
+      "hints": [
+        {
+          "line_number": 12,
+          "hint": "Once a variable has been declared, it cannot be declared again in the same scope. Only its value can be changed."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't compiling correctly! Can you help fix it? Be sure to also address any formatting errors.",
+      "hints": [
+        {
+          "line_number": 6,
+          "hint": "Variable names cannot have spaces in them."
+        },
+        {
+          "line_number": 9,
+          "hint": "Variable names cannot begin with numbers."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't compiling correctly! Can you help fix it? Be sure to also address any formatting errors.",
+      "hints": [
+        {
+          "line_number": 10,
+          "hint": "Variables can only be used after they are declared."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't running correctly! Can you help fix it? Be sure to also address any formatting or syntax errors.",
+      "hints": [
+        {
+          "line_number": 8,
+          "hint": "It is important to make sure the type of the variable matches the type being assigned to it."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't running correctly! Can you help fix it? Be sure to also address any formatting or syntax errors.",
+      "hints": [
+        {
+          "line_number": 12,
+          "hint": "Make sure that you are always using the variable you intended to."
+        }
+      ]
+    }
+  ],
+  "invent_code": [
+    {
+      "question": "Let's calculate the cost of making some very simple guacamole.\n\n1. Prompt the user for the number of tomatoes and avocados required.\n2. Prompt the user for the cost of each of those items.\n3. Caclulate the total cost for tomatoes and avocados.\n4. Print out the total cost.",
+      "hints": []
+    },
+    {
+      "question": "Create a greeting for someone based on their name and location.\n\n1. Start by asking the user for their name, and then ask them what city their from.\n2. Then print out the following: `Nice to meet you [name] from [city]. Have a great day!`.",
+      "hints": []
+    }
+  ]
+}
