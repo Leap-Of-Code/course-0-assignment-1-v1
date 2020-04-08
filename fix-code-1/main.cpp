@@ -6,11 +6,11 @@ using namespace std;
 int main() {
     int DAYS_PER_YEAR = 365;
     float average_rainfall = .23;
-    float AverageSnowfall = .12;
+    float Average_Snowfall = .12;
 
-    float averagePrecipitation = average_rainfall + AverageSnowfall;
+    float average_Precipitation = average_rainfall + Average_Snowfall;
 
-    float total_precipitation = DAYS_PER_YEAR * averagePrecipitation;
+    float total_precipitation = DAYS_PER_YEAR * average_Precipitation;
 
     cout << "The precipitation in Boston is: " << total_precipitation << " in." << endl;
 }

@@ -3,8 +3,10 @@
 using namespace std;
 
 int main() {
-  string name;
-  string city;
+  string name = "[name]";
+  string city = "[city]";
+
+  cout << "Nice to meet you " << name << " from " << city << ". Have a great day!" << endl; 
 
   // Step 1. Ask the user for their name and their city.
 
