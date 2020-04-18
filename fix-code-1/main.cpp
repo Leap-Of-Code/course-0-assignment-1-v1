@@ -4,13 +4,13 @@ using namespace std;
 
 // Calculate the total precipitation numbers in Boston.
 int main() {
-    int DAYS_PER_YEAR = 365;
+    int days_per_year = 365;
     float average_rainfall = .23;
     float AverageSnowfall = .12;
 
-    float averagePrecipitation = average_rainfall + AverageSnowfall;
+    float average_precipitation = average_rainfall + AverageSnowfall;
 
-    float total_precipitation = DAYS_PER_YEAR * averagePrecipitation;
+    float total_precipitation = days_per_year * average_precipitation;
 
     cout << "The precipitation in Boston is: " << total_precipitation << " in." << endl;
 }
