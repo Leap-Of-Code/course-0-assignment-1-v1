@@ -3,13 +3,23 @@
 using namespace std;
 
 int main() {
-  int price_avocado = 2;
-  int price_tomato = 3;
+  int num_avocados;
+  cout << "Number of avocados needed: " << endl; 
+  cin >> num_avocados;
 
-  int num_avocados = 5;
-  int num_tomatoes = 6;
+  int num_tomatoes;
+  cout << "Number of tomatoes needed: " << endl; 
+  cin >> num_tomatoes; 
 
-  int total_cost = price_avocado * num_avocados + price_tomato * num_tomatoes;
+  float price_avocado;
+  cout << "Cost of each avocado: " << endl; 
+  cin >> price_avocado;
+
+  float price_tomato;
+  cout << "Cost of each tomato: " << endl;
+  cin >> price_tomato;
+
+  int total_cost = (price_avocado * num_avocados) + (price_tomato * num_tomatoes); 
 
   cout << "total cost is: $" << total_cost << endl;
   

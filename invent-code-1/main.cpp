@@ -3,8 +3,14 @@
 using namespace std;
 
 int main() {
-  string name = "[name]";
-  string city = "[city]";
+  string name;
+  cout << "What is your name? " << endl; 
+  cin >> name;
+
+  string city; 
+  cout << " What city are you from? " << endl; 
+  cin >> city;
+
 
   cout << "Nice to meet you " << name << " from " << city << ". Have a great day!" << endl; 
 
