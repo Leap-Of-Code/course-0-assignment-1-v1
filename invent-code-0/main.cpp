@@ -22,10 +22,10 @@ int main() {
   cin >> price_avocado;
 
   // Step 3: Calculate the total cost.
-  int total_cost = (num_avocados * price_avocado);
+  int avocado_all = (num_avocados * price_avocado);
   int tomato_all = (num_tomatoes * price_tomato);
 
   // Step 4: Print out the total cost.
-  cout << "Avacado cost is: " << total_cost;
-  cout << "tomato cost is " << tomato_all << endl;
+  cout << "Avocado cost is: " << avocado_all << endl;
+  cout << "Tomato cost is " << tomato_all << endl;
 }
