@@ -8,7 +8,5 @@ int main() {
   float hours_per_lesson = 3.2;
   int tota_student_time = (num_students * num_lessons * hours_per_lesson);
 
-  cout << "Total student time is: ";
-  cout << tota_student_time;
-  cout << endl;
+  cout << "Total student time is: " << tota_student_time << endl;
 }

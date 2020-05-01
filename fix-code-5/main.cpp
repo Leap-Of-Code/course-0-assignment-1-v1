@@ -9,9 +9,7 @@ int main() {
   int cup_4_vol = 12;
 
   int total_vol = cup_1_vol + cup_2_vol + cup_3_vol + cup_4_vol;
-  cout << "Total volume is: ";
-  cout << total_vol;
-  cout << endl;
+  cout << "Total volume is: " << total_vol << endl;
 
 
 }

@@ -9,7 +9,5 @@ int main() {
   int hamburger_calories = 120;
   int total_calories = hotdogs_eaten * calories_per_hotdog + hamburgers_eaten * hamburger_calories;
 
-  cout << "The total calories eaten: ";
-  cout << total_calories;
-  cout << endl;
+  cout << "The total calories eaten: " << total_calories << endl;
 }

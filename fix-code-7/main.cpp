@@ -11,7 +11,5 @@ int main() {
 
   int total_weight = num_pigs * average_pig_weight + num_cows * average_cow_weight;
 
-  cout << "The total weight of all animals is: ";
-  cout << total_weight;
-  cout << endl;
+  cout << "The total weight of all animals is: " << total_weight << endl;
 }
