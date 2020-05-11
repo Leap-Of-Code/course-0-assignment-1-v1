@@ -14,5 +14,5 @@ int main() {
   cin >> city; 
 
   // Step 2. Print the greeting back to the user.
-  cout << "Welcome to " << city << "! Wash your hands, don't touch your face, let's keep " << city << " a COVID-free place." << endl;
+  cout << "Welcome to " << city << ", " << name << "! Wash your hands, don't touch your face, let's keep " << city << " a COVID-free place." << endl;
 }
