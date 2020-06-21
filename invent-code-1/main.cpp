@@ -7,6 +7,7 @@ int main() {
   string city;
 
   // Step 1. Ask the user for their name and their city.
-
+  cin >> name >> city;
   // Step 2. Print the greeting back to the user.
+  cout << name << city;
 }
