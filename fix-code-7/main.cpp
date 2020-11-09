@@ -9,7 +9,7 @@ int main() {
   int average_pig_weight = 150;
   int average_cow_weight = 300;
 
-  int total_weight = num_pigs * average_cow_weight + num_cows * average_cow_weight;
+  int total_weight = (num_pigs * average_pig_weight) + (num_cows * average_cow_weight);
 
-  cout << "The total weight of all animals is: " << total_weight << endl;
+  cout << "The total weight of all animals is: " << total_weight << " pounds" << endl;
 }
