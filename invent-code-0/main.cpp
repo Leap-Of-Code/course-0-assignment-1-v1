@@ -3,15 +3,24 @@
 using namespace std;
 
 int main() {
-  int price_avocado;
-  int price_tomato;
+  float price_avocado;
+  float price_tomato;
   int num_avocados;
   int num_tomatoes;
-  // Step 1: Prompt the user to input the number of tomatoes and avocados required.
 
-  // Step 2: Prompt the user to input the cost of tomatoes and avocados.
+  cout << "Number of Tomatoes:";
+  cin >> num_tomatoes;
 
-  // Step 3: Calculate the total cost.
+  cout << "Number of Avocados:";
+  cin >> num_avocados;
 
-  // Step 4: Print out the total cost.
+  cout << "Cost of One Tomato:";
+  cin >> price_tomato;
+
+  cout << "Cost of One Avocado:";
+  cin >> price_avocado;
+  
+  float total_cost = (num_tomatoes * price_tomato) + (num_avocados * price_avocado);
+  cout << "Total cost is $" << total_cost << endl;
+  
 }
