@@ -7,7 +7,7 @@ int main() {
   float price_tomato;
   int num_avocados;
   int num_tomatoes;
-  float total_cost;
+
   cout << "Number of Tomatoes:";
   cin >> num_tomatoes;
 
@@ -20,7 +20,7 @@ int main() {
   cout << "Cost of One Avocado:";
   cin >> price_avocado;
   
-  total_cost = (num_tomatoes * price_tomato) + (num_avocados * price_avocado);
+  float total_cost = (num_tomatoes * price_tomato) + (num_avocados * price_avocado);
   cout << "Total cost is $" << total_cost << endl;
   
 }

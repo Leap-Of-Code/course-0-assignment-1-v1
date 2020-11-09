@@ -6,10 +6,10 @@ int main() {
   string city;
 
   cout << "What is your name?: ";
-  getline(cin , name);
+  cin >> name;
 
   cout << "What is your city?: ";
-  getline(cin , city);
+  cin >> city;
 
   cout << "Nice to meet you " << name << " from " << city << ". Have a great day!" << endl;
 }
